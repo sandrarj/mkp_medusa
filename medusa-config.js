@@ -29,7 +29,7 @@ const ADMIN_CORS =
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgresql://ima2024_owner:TE1kJZNC2vBI@ep-wild-haze-a24robr1.eu-central-1.aws.neon.tech/ima2024?sslmode=require";
+  process.env.DATABASE_URL ;
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
@@ -74,7 +74,7 @@ const projectConfig = {
   jwtSecret: process.env.JWT_SECRET,
   cookieSecret: process.env.COOKIE_SECRET,
   store_cors: STORE_CORS,
-  database_url: DATABASE_URL,
+  database_url: process.env.DATABASE_URL,
   admin_cors: ADMIN_CORS,
   // Uncomment the following lines to enable REDIS
   // redis_url: REDIS_URL

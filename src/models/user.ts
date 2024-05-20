@@ -30,5 +30,9 @@ import {
 @Entity()
 export class User extends MedusaUser {
   @Column()
-  customAttribute: string
-}
+  store_id: string;
+  @Column()
+  is_admin: string;
+  @Column()
+  status: string;
+} 

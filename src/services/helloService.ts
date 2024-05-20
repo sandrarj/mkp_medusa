@@ -14,7 +14,8 @@ class HelloService extends TransactionBaseService {
     super(arguments)
 
     try {
-      this.loggedInUser_ = container.loggedInUser
+      this.loggedInUser_ = container.loggedInUser;
+      console.log('HelloService: executed.......')
     } catch (e) {
       // avoid errors when backend first runs
     }
